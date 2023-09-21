@@ -6,7 +6,7 @@
 	"author": "[https://www.mediawiki.org/wiki/User:Sophivorus Sophivorus]",
 	"descriptionmsg": "googletagmanager-desc",
 	"license-name": "GPL-3.0-or-later",
-	"type": "other",
+	"type": "user activity",
 	"requires": {
 		"MediaWiki": ">= 1.39.0"
 	},
