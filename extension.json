@@ -1,0 +1,46 @@
+{
+	"manifest_version": 2,
+	"name": "GoogleTagManager",
+	"version": "1.0",
+	"url": "https://www.mediawiki.org/wiki/Extension:GoogleTagManager",
+	"author": "[https://www.mediawiki.org/wiki/User:Sophivorus Sophivorus]",
+	"descriptionmsg": "googletagmanager-desc",
+	"license-name": "GPL-3.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.39.0"
+	},
+	"MessagesDirs": {
+		"GoogleTagManager": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"GoogleTagManager": "GoogleTagManager.php"
+	},
+	"ResourceModules": {
+		"ext.GoogleTagManager": {
+			"scripts": "GoogleTagManager.js",
+			"targets": [
+				"desktop",
+				"mobile"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "GoogleTagManager"
+	},
+	"Hooks": {
+		"BeforePageDisplay": "GoogleTagManager::onBeforePageDisplay",
+		"ResourceLoaderGetConfigVars": "GoogleTagManager::onResourceLoaderGetConfigVars"
+	},
+	"config": {
+		"GoogleTagManagerContainerID": {
+			"value": ""
+		},
+		"GoogleTagManagerSkipGroups": {
+			"value": []
+		}
+	}
+}
