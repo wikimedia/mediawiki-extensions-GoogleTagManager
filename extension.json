@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "GoogleTagManager",
-	"version": "1.0",
+	"version": "1.1",
 	"url": "https://www.mediawiki.org/wiki/Extension:GoogleTagManager",
 	"author": "[https://www.mediawiki.org/wiki/User:Sophivorus Sophivorus]",
 	"descriptionmsg": "googletagmanager-desc",
@@ -41,6 +41,9 @@
 		},
 		"GoogleTagManagerSkipGroups": {
 			"value": []
+		},
+		"GoogleTagManagerDefer": {
+			"value": false
 		}
 	}
 }

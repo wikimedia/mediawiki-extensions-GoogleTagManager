@@ -26,5 +26,6 @@ class GoogleTagManager {
 	public static function onResourceLoaderGetConfigVars( array &$vars, $skin, Config $config ) {
 		$vars['wgGoogleTagManagerContainerID'] = $config->get( 'GoogleTagManagerContainerID' );
 		$vars['wgGoogleTagManagerSkipGroups'] = $config->get( 'GoogleTagManagerSkipGroups' );
+		$vars['wgGoogleTagManagerDefer'] = $config->get( 'GoogleTagManagerDefer' );
 	}
 }
