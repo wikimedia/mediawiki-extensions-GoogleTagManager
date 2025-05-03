@@ -8,7 +8,7 @@ window.GoogleTagManager = {
 		const userGroups = mw.config.get( 'wgUserGroups' );
 		const skipGroups = mw.config.get( 'wgGoogleTagManagerSkipGroups' );
 		for ( const userGroup of userGroups ) {
-			if ( skipGroups.indexOf( userGroup ) > -1 ) {
+			if ( skipGroups.includes( userGroup ) ) {
 				return;
 			}
 		}
